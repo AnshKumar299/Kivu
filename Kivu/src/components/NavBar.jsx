@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import{ useSelector,useDispatch } from 'react-redux';
 
 const NavBar = () => {
-  const username=useSelector((state)=>state.username.value);
+  const username=useSelector((state)=>state.username.name);
   return (
     <div className="bg-amber-950 h-19 flex justify-evenly items-center">
       <div className="h-full flex justify-center items-center">
