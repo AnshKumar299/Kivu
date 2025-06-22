@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme{
+    --font-edu: "Edu NSW ACT Hand Pre", cursive;
+    --font-quicksand: "Quicksand",'sans-serif';
+}
