@@ -10,7 +10,7 @@ function BalanceBar() {
   ];
 
   return (
-    <div className='px-10 w-8/9 border-2 p-10 rounded-4xl bg-amber-100'>
+    <div className="h-full w-full p-12 border-2 rounded-4xl bg-amber-100">
         <div className="font-quicksand font-extrabold pb-5 text-2xl text-emerald-700 ">
             Savings Progress Bar:
         </div>
