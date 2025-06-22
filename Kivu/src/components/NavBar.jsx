@@ -2,8 +2,10 @@ import React, { use } from "react";
 import applogo from "../assets/Main-Logo.png";
 import userlogo from "../assets/user-logo-default.png";
 import { NavLink } from "react-router-dom";
+import{ useSelector,useDispatch } from 'react-redux';
 
 const NavBar = () => {
+  const username=useSelector((state)=>state.username.value);
   return (
     <div className="bg-amber-950 h-19 flex justify-evenly items-center">
       <div className="h-full flex justify-center items-center">
@@ -41,11 +43,11 @@ const NavBar = () => {
           Transactions
         </NavLink>
       </div>
-      <div className="border-white border-2 flex justify-evenly items-center h-8/11  p-2">
+      <div className="border-white border-2 flex justify-evenly items-center h-8/11 min-w-28 p-2">
         <img src={userlogo} alt={userlogo} className="size-10 mr-2" />
         <div className="ml-1 my-1">
-          <h1 className="font-bold text-orange-100 font-quicksand font-stretch-105% text-md">
-            John Doe
+          <h1 className="font-bold text-orange-100 font-quicksand font-stretch-105% text-sm">
+            {username}
           </h1>
           <h4 className="font-light text-orange-500 font-quicksand text-sm ">
             India
