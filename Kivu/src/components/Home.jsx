@@ -4,6 +4,8 @@ import BalanceBar from './BalanceBar';
 import PieDistribution from './PieDistribution';
 import { useSelector } from 'react-redux';
 import BalanceComponent from './BalanceComponent';
+import LastTransactions from './LastTransactions';
+import Footer from './footer';
 
 const Home = () => {
   const username = useSelector((state) => state.username.name);
@@ -41,10 +43,16 @@ const Home = () => {
 
       {/* Balance Bar centered below */}
       <div className="flex justify-center items-center px-4 md:px-12 mt-12">
-        <div className="w-full max-w-10/12">
+        <div className="w-full mb-12">
           <BalanceBar />
         </div>
       </div>
+      <div className="flex justify-center items-center px-4 px-12 mt-12">
+        <div className="w-full mb-12">
+          <LastTransactions/>
+        </div>
+      </div>
+      <Footer/>
     </div>
   );
 };

@@ -53,7 +53,7 @@ function BalanceBar() {
 
             <div className="flex py-2 justify-between">
               <div onClick={()=>{
-                tempgoal=goal;
+                setTempGoal(goal);
                 setIsModalOpen(false);
               }} className="bg-red-700 px-3 text-white rounded-lg py-1 hover:bg-red-600">
                 Cancel

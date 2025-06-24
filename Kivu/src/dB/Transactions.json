@@ -35,7 +35,7 @@
     "id": "txn_004",
     "amount": 600,
     "type": "sent",
-    "category": "travel",
+    "category": "miscellaneous",
     "note": "Uber to station",
     "timestamp": "2025-06-10T08:45:00Z"
   },
@@ -83,7 +83,7 @@
     "id": "txn_010",
     "amount": 1200,
     "type": "sent",
-    "category": "travel",
+    "category": "miscellaneous",
     "note": "Train ticket to hometown",
     "timestamp": "2025-06-18T07:50:00Z"
   },
@@ -154,7 +154,7 @@
     "id": "txn_019",
     "amount": 750,
     "type": "sent",
-    "category": "travel",
+    "category": "miscellaneous",
     "note": "Metro card top-up",
     "timestamp": "2025-06-08T10:05:00Z"
   },
