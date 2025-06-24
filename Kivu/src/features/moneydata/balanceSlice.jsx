@@ -8,6 +8,7 @@ let initialState = {
   taxes: 2000,
   bills: 5000,
   savings: 4000,
+  miscellaneous:30,
   remaining: 0,
 };
 

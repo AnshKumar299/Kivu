@@ -1,0 +1,183 @@
+[
+  {
+    "id": "txn_000",
+    "amount": 45000,
+    "type": "received",
+    "category": "miscellaneous",
+    "note": "Monthly salary from company",
+    "timestamp": "2025-06-01T08:00:00Z"
+  },
+  {
+    "id": "txn_001",
+    "amount": 2500,
+    "type": "sent",
+    "category": "food",
+    "note": "Ordered pizza and groceries",
+    "timestamp": "2025-06-22T13:20:00Z"
+  },
+  {
+    "id": "txn_002",
+    "amount": 18000,
+    "type": "sent",
+    "category": "rent",
+    "note": "June month rent",
+    "timestamp": "2025-06-01T09:00:00Z"
+  },
+  {
+    "id": "txn_003",
+    "amount": 9000,
+    "type": "received",
+    "category": "miscellaneous",
+    "note": "Freelance payment from client",
+    "timestamp": "2025-06-15T17:30:00Z"
+  },
+  {
+    "id": "txn_004",
+    "amount": 600,
+    "type": "sent",
+    "category": "travel",
+    "note": "Uber to station",
+    "timestamp": "2025-06-10T08:45:00Z"
+  },
+  {
+    "id": "txn_005",
+    "amount": 2300,
+    "type": "sent",
+    "category": "clothing",
+    "note": "Bought new T-shirts online",
+    "timestamp": "2025-06-12T19:12:00Z"
+  },
+  {
+    "id": "txn_006",
+    "amount": 4500,
+    "type": "received",
+    "category": "miscellaneous",
+    "note": "Sold old headphones",
+    "timestamp": "2025-06-13T11:30:00Z"
+  },
+  {
+    "id": "txn_007",
+    "amount": 5200,
+    "type": "sent",
+    "category": "bills",
+    "note": "Electricity and internet bills",
+    "timestamp": "2025-06-05T14:00:00Z"
+  },
+  {
+    "id": "txn_008",
+    "amount": 2000,
+    "type": "sent",
+    "category": "taxes",
+    "note": "Platform service fee",
+    "timestamp": "2025-06-07T09:15:00Z"
+  },
+  {
+    "id": "txn_009",
+    "amount": 1000,
+    "type": "sent",
+    "category": "food",
+    "note": "Lunch at cafeteria",
+    "timestamp": "2025-06-21T13:45:00Z"
+  },
+  {
+    "id": "txn_010",
+    "amount": 1200,
+    "type": "sent",
+    "category": "travel",
+    "note": "Train ticket to hometown",
+    "timestamp": "2025-06-18T07:50:00Z"
+  },
+  {
+    "id": "txn_011",
+    "amount": 5000,
+    "type": "received",
+    "category": "miscellaneous",
+    "note": "Shared rent contribution from roommate",
+    "timestamp": "2025-06-03T10:10:00Z"
+  },
+  {
+    "id": "txn_012",
+    "amount": 2400,
+    "type": "sent",
+    "category": "clothing",
+    "note": "Bought shoes during sale",
+    "timestamp": "2025-06-14T15:00:00Z"
+  },
+  {
+    "id": "txn_013",
+    "amount": 3600,
+    "type": "sent",
+    "category": "bills",
+    "note": "Gas and phone recharge",
+    "timestamp": "2025-06-06T12:20:00Z"
+  },
+  {
+    "id": "txn_014",
+    "amount": 1500,
+    "type": "received",
+    "category": "miscellaneous",
+    "note": "Project milestone bonus",
+    "timestamp": "2025-06-09T16:40:00Z"
+  },
+  {
+    "id": "txn_015",
+    "amount": 850,
+    "type": "sent",
+    "category": "taxes",
+    "timestamp": "2025-06-16T18:10:00Z"
+  },
+  {
+    "id": "txn_016",
+    "amount": 3000,
+    "type": "sent",
+    "category": "food",
+    "note": "Monthly groceries",
+    "timestamp": "2025-06-11T11:50:00Z"
+  },
+  {
+    "id": "txn_017",
+    "amount": 400,
+    "type": "sent",
+    "category": "miscellaneous",
+    "note": "Coffee with friends",
+    "timestamp": "2025-06-17T20:25:00Z"
+  },
+  {
+    "id": "txn_018",
+    "amount": 1000,
+    "type": "received",
+    "category": "miscellaneous",
+    "note": "Birthday gift from parents",
+    "timestamp": "2025-06-20T07:30:00Z"
+  },
+  {
+    "id": "txn_019",
+    "amount": 750,
+    "type": "sent",
+    "category": "travel",
+    "note": "Metro card top-up",
+    "timestamp": "2025-06-08T10:05:00Z"
+  },
+  {
+    "id": "txn_020",
+    "amount": 950,
+    "type": "sent",
+    "category": "clothing",
+    "timestamp": "2025-06-19T12:45:00Z"
+  },
+  {
+    "id": "txn_021",
+    "amount": 5000,
+    "type": "sent",
+    "category": "savings",
+    "timestamp": "2025-06-20T12:45:00Z"
+  },
+  {
+    "id": "txn_022",
+    "amount": 2500,
+    "type": "sent",
+    "category": "food",
+    "note":"went to eat out with friends",
+    "timestamp": "2025-06-20T12:45:00Z"
+  }
+]

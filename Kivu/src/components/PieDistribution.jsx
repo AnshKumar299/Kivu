@@ -1,9 +1,10 @@
 import * as React from 'react';
 import { PieChart } from '@mui/x-charts/PieChart';
 import { useSelector } from 'react-redux';
+import { selectBalanceByCategory } from '../features/selectors/balanceSelectors';
 
 export default function PieDistribution() {
-  const balance = useSelector((state) => state.balance);
+  const balance = useSelector(selectBalanceByCategory);
 
   const distribution = Object.entries(balance)
     .filter(([key]) => key !== 'net' && typeof balance[key] === 'number')

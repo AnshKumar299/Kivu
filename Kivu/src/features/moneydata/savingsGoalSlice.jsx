@@ -1,9 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 let initialState = {
-  goal: 500000,
-  current: 140000, // static initial value; dynamic updates happen via reducer
-  goalReached: false,
+  goal: 30000,
 };
 
 export const savingsGoalSlice = createSlice({
@@ -12,13 +10,19 @@ export const savingsGoalSlice = createSlice({
   reducers: {
     addSavings: (state, action) => {
       state.current += action.payload;
-      if (state.current >= state.goal) {
-        state.goalReached = true;
-      }
     },
+    resetEverything:(state) =>{
+      state.goal = 0;
+      state.current=0;
+      state.goalReached=false;
+    },
+    updateGoal:(state,action)=>{
+      state.goal=action.payload;
+    },
+
   },
 });
 
-export const { addSavings } = savingsGoalSlice.actions;
+export const { addSavings,updateGoal,resetEverything } = savingsGoalSlice.actions;
 
 export default savingsGoalSlice.reducer;

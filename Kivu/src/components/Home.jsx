@@ -14,7 +14,7 @@ const Home = () => {
       <NavBar />
 
       {/* Greeting Section */}
-      <div className="py-10 px-6 md:px-12">
+      <div className="py-10 px-6 md:px-12 ">
         <h1 className="font-robotoserif font-extrabold text-3xl md:text-5xl text-gray-800">
           Hello,
           <span className="text-orange-800 ml-2">
@@ -41,7 +41,7 @@ const Home = () => {
 
       {/* Balance Bar centered below */}
       <div className="flex justify-center items-center px-4 md:px-12 mt-12">
-        <div className="w-full max-w-3xl">
+        <div className="w-full max-w-10/12">
           <BalanceBar />
         </div>
       </div>
