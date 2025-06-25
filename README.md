@@ -75,7 +75,7 @@ src/
 ## 👤 Author
 
 **Ansh Kumar**  
-📫 [LinkedIn]([https://www.linkedin.com/in/your-profile](https://www.linkedin.com/in/ansh-kumar-singh-342780290/))  
+📫 [LinkedIn](https://www.linkedin.com/in/your-profile](https://www.linkedin.com/in/ansh-kumar-singh-342780290/)  
 ---
 
 ## 📝 License
