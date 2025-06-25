@@ -5,7 +5,7 @@ import PieDistribution from './PieDistribution';
 import { useSelector } from 'react-redux';
 import BalanceComponent from './BalanceComponent';
 import LastTransactions from './LastTransactions';
-import Footer from './footer';
+import Footer from './Footer';
 
 const Home = () => {
   const username = useSelector((state) => state.username.name);
