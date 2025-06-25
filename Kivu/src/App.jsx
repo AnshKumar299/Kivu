@@ -1,5 +1,6 @@
 import './App.css'
 import Home from './components/Home'
+import ReportsTab from './components/ReportsTab'
 import TransactionTab from './components/TransactionsTab'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
@@ -12,6 +13,9 @@ function App() {
       },{
         path:'/Transactions',
         element:<TransactionTab/>
+      },{
+        path:'/Reports',
+        element:<ReportsTab/>
       }
     ]
   )

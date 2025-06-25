@@ -1,22 +1,27 @@
-import React, { use } from "react";
+import React from "react";
 import applogo from "../assets/Main-Logo.png";
 import userlogo from "../assets/user-logo-default.png";
 import { NavLink } from "react-router-dom";
-import{ useSelector,useDispatch } from 'react-redux';
+import { useSelector } from "react-redux";
 
 const NavBar = () => {
-  const username=useSelector((state)=>state.username.name);
+  const username = useSelector((state) => state.username.name);
+
   return (
-    <div className="bg-amber-950 h-19 flex justify-evenly items-center">
-      <div className="h-full flex justify-center items-center">
-        <img src={applogo} alt="logo" className="h-4/6" />
+    <div className="bg-amber-950 w-full flex flex-col sm:flex-row sm:justify-between sm:items-center p-4 gap-4 sm:gap-0">
+      
+      {/* Logo */}
+      <div className="flex justify-center sm:justify-start items-center">
+        <img src={applogo} alt="logo" className="h-12 sm:h-16" />
       </div>
-      <div className="w-3/8 min-w-96 max-w-3/5 h-full flex justify-between">
+
+      {/* Navigation Links */}
+      <div className="flex flex-col sm:flex-row sm:justify-center items-center gap-3 sm:gap-8">
         <NavLink
           to="/"
           className={({ isActive }) =>
-            `text-amber-300 font-quicksand font-light text-2xl flex items-center hover:border-b-amber-300 h-full ${
-              isActive ? "border-b-4 border-amber-300" : ""
+            `text-amber-300 font-quicksand text-lg sm:text-2xl hover:border-b-amber-300 ${
+              isActive ? "border-b-2 border-amber-300" : ""
             }`
           }
         >
@@ -25,8 +30,8 @@ const NavBar = () => {
         <NavLink
           to="/Reports"
           className={({ isActive }) =>
-            `text-amber-300 font-quicksand font-light text-2xl flex items-center hover:border-b-amber-300 h-full${
-              isActive ? "border-b-4 border-amber-300" : ""
+            `text-amber-300 font-quicksand text-lg sm:text-2xl hover:border-b-amber-300 ${
+              isActive ? "border-b-2 border-amber-300" : ""
             }`
           }
         >
@@ -35,21 +40,23 @@ const NavBar = () => {
         <NavLink
           to="/Transactions"
           className={({ isActive }) =>
-            `text-amber-300 font-quicksand font-light text-2xl flex items-center hover:border-b-amber-300 h-full ${
-              isActive ? "border-b-4 border-amber-300" : ""
+            `text-amber-300 font-quicksand text-lg sm:text-2xl hover:border-b-amber-300 ${
+              isActive ? "border-b-2 border-amber-300" : ""
             }`
           }
         >
           Transactions
         </NavLink>
       </div>
-      <div className="border-white border-2 flex justify-evenly items-center h-8/11 min-w-28 p-2">
-        <img src={userlogo} alt={userlogo} className="size-10 mr-2" />
-        <div className="ml-1 my-1">
-          <h1 className="font-bold text-orange-100 font-quicksand font-stretch-105% text-sm">
+
+      {/* User Info */}
+      <div className="flex items-center gap-2 sm:gap-3 bg-amber-800 p-2 rounded-lg self-center sm:self-auto">
+        <img src={userlogo} alt="user" className="w-10 h-10" />
+        <div className="text-left">
+          <h1 className="font-bold text-orange-100 text-sm sm:text-base">
             {username}
           </h1>
-          <h4 className="font-light text-orange-500 font-quicksand text-sm ">
+          <h4 className="font-light text-orange-500 text-xs sm:text-sm">
             India
           </h4>
         </div>
