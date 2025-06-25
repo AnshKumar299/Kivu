@@ -1,12 +1,85 @@
-# React + Vite
+# 🪙 Kivu – Personal Finance Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Kivu** is a simple and responsive personal finance web application that helps you keep track of your transactions, spending categories, and savings goals.
 
-Currently, two official plugins are available:
+🚀 **Live Site:** [kivu-woad.vercel.app](https://kivu-woad.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📸 Screenshots
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Desktop View | Mobile View |
+| ------------ | ----------- |
+| *(Add screenshots here)* | *(Add screenshots here)* |
+
+---
+
+## ✨ Features
+
+- 📊 Track transactions across various categories like food, rent, taxes, etc.
+- ➕ Add and manage transaction records easily
+- 🧮 Smart summary and balance calculations
+- 🔍 Search transactions by name
+- 📱 Fully responsive design (works great on mobile and desktop)
+- 💾 Data managed via Redux store
+
+---
+
+## 🧰 Tech Stack
+
+- **React**
+- **Tailwind CSS**
+- **Redux Toolkit**
+- **Vite**
+- **Vercel** (Deployment)
+
+---
+
+## 📦 Installation
+
+Clone the repo and run locally:
+
+```bash
+git clone https://github.com/AnshKumar299/Kivu.git
+cd Kivu
+npm install
+npm run dev
+```
+
+---
+
+## 🛠 Project Structure
+
+```
+src/
+├── assets/           → Logos and images
+├── components/       → Reusable UI components (NavBar, Modal, etc.)
+├── features/         → Redux slices (transactions, savings, etc.)
+├── pages/            → App tabs and routes (Home, Reports, Transactions)
+├── App.jsx           → Main component
+├── main.jsx          → Entry point
+└── index.css         → Tailwind and global styles
+```
+
+---
+
+## ✅ To Do
+
+- Add authentication
+- Sync with backend or localStorage
+- Export reports (PDF/CSV)
+- Add pie/bar charts for spending insights
+
+---
+
+## 👤 Author
+
+**Ansh Kumar**  
+📫 [LinkedIn](https://www.linkedin.com/in/your-profile)  
+📧 ansh.email@example.com *(replace with your real email if you want)*
+
+---
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
