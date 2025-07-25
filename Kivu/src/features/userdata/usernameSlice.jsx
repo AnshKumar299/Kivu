@@ -18,21 +18,24 @@ export const usernameSlice = createSlice({
   },
   extraReducers:(builder)=>{
     builder.addCase(fetchUsername.pending,(state,action)=>{
-      state.isLoading=true
+      state.isLoading=true;
+      state.checked=false;
+      state.isError=false;
     });
 
     builder.addCase(fetchUsername.fulfilled, (state,action)=>{
-      state.isLoading = false;
       if (action.payload.status) {
         state.data = action.payload.user; // set username
       } else {
         state.data = null; // no user logged in
       }
-      state.checked=true
+      state.checked=true;
+      state.isLoading=false;
     })
 
     builder.addCase(fetchUsername.rejected,(state,action)=>{
       state.isLoading = false;
+      state.checked=true;
       state.isError = true;
       state.data = null;
       console.error("Failed to fetch username:", action.error);

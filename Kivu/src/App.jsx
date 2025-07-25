@@ -2,7 +2,6 @@
 import './App.css'
 import AuthForm from './components/AuthForm'
 import Home from './components/Home'
-import ReportsTab from './components/ReportsTab'
 import TransactionTab from './components/TransactionsTab'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
@@ -15,9 +14,6 @@ function App() {
       },{
         path:'/Transactions',
         element:<TransactionTab/>
-      },{
-        path:'/Reports',
-        element:<ReportsTab/>
       },{
         path:'/login',
         element:<AuthForm type="login"/>

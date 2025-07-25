@@ -12,34 +12,40 @@ export const selectBalanceByCategory = createSelector(
       clothing: 0,
       taxes: 0,
       bills: 0,
-      miscellaneous:0,
-      savings:0,
-      remaining:0,
+      miscellaneous: 0,
+      savings: 0,
+      remaining: 0,
     };
 
     for (const tx of txns) {
-        if(tx.type==='received'){
-            balance.net+=tx.amount;
+      const amount = Number(tx.amount) || 0;
+
+      if (tx.type === 'received') {
+        balance.net += amount;
+      } else {
+        // Expense categories
+        switch (tx.category) {
+          case 'rent': balance.rent += amount; break;
+          case 'food': balance.food += amount; break;
+          case 'clothing': balance.clothing += amount; break;
+          case 'taxes': balance.taxes += amount; break;
+          case 'bills': balance.bills += amount; break;
+          case 'savings': balance.savings += amount; break;
+          default: balance.miscellaneous += amount; break;
         }
-        else if(tx.category==='rent'){
-            balance.rent+=tx.amount;
-        }else if(tx.category==='clothing'){
-            balance.clothing+=tx.amount;
-        }
-        else if(tx.category =='food'){
-            balance.food+=tx.amount;
-        }
-        else if(tx.category==='taxes'){
-            balance.taxes+=tx.amount;
-        }else if(tx.category==='bills'){
-            balance.bills+=tx.amount;
-        }else if(tx.category==='savings'){
-            balance.savings+=tx.amount;
-        }else{
-            balance.miscellaneous+=tx.amount;
-        }
+      }
     }
-    balance.remaining=balance.net-(balance.bills+balance.clothing+balance.food+balance.miscellaneous+balance.rent+balance.taxes+balance.savings);
+
+    balance.remaining = balance.net - (
+      balance.rent +
+      balance.food +
+      balance.clothing +
+      balance.taxes +
+      balance.bills +
+      balance.miscellaneous +
+      balance.savings
+    );
+
     return balance;
   }
 );

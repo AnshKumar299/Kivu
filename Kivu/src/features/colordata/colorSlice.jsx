@@ -3,37 +3,37 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   rent: {
-    bg: 'bg-blue-500',
+    bg: 'bg-blue-200',
     text: 'text-blue-700',
     icon:'🏡'
   },
   food: {
-    bg: 'bg-yellow-400',
+    bg: 'bg-yellow-200',
     text: 'text-yellow-700',
     icon:'🥗'
   },
   clothing: {
-    bg: 'bg-red-600', // crimson-like
+    bg: 'bg-red-200', // crimson-like
     text: 'text-red-800',
     icon:'👕'
   },
   taxes: {
-    bg: 'bg-sky-400',
+    bg: 'bg-sky-200',
     text: 'text-sky-700',
     icon:'💰'
   },
   bills: {
-    bg: 'bg-emerald-300',
+    bg: 'bg-emerald-200',
     text: 'text-emerald-700',
     icon:'💵'
   },
   miscellaneous: {
-    bg: 'bg-pink-400',
+    bg: 'bg-pink-200',
     text: 'text-pink-700',
     icon:'💼'
   },
   savings: {
-    bg: 'bg-orange-300',
+    bg: 'bg-orange-200',
     text: 'text-orange-700',
     icon:'💳'
   },

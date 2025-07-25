@@ -31,15 +31,21 @@ module.exports.addTransaction = async(req,res)=>{
     }
 };
 
-module.exports.getTransactions =async(req,res)=>{
-    try{
-        const transaction = await Transaction.find({userId: req.user._id})
-                                                .sort({timestamp:-1}) //latest first
-        res.json(transaction);
-    }catch(error){
-        res.status(500).json({message: 'Server error',error:error.message});
+module.exports.getTransactions = async (req, res) => {
+  try {
+    const transactions = await Transaction.find({ userId: req.user._id })
+      .sort({ timestamp: -1 }); // latest first
+
+    if (!transactions || transactions.length === 0) {
+      return res.status(404).json({ message: 'No transactions found' });
     }
+
+    res.json(transactions);
+  } catch (error) {
+    res.status(500).json({ message: 'Server error', error: error.message });
+  }
 };
+
 
 exports.getTransactionById = async (req, res) => {
   try {
@@ -78,7 +84,7 @@ module.exports.updateTransaction = async(req,res)=>{
             transaction
         })
     }catch(err){
-        req.status(500).json({
+        res.status(500).json({
             message:"Server error",
             error: err.message,
         })
