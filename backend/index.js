@@ -33,6 +33,9 @@ app.use(cookieParser());
 
 app.use(express.json());
 
+app.('/',(req,res)=>{
+    res.send("APP IS WORKING PROPERLY");
+});
 
 app.listen(PORT,()=>{
     console.log('Server is active');
