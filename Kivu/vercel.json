@@ -1,8 +1,8 @@
 {
-    "rewrites":[
-        {
-            "source":"/(.*)",
-            "destination":"/index.html"
-        }
-    ]
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://kivu-backend.vercel.app/api/$1"
+    }
+  ]
 }
