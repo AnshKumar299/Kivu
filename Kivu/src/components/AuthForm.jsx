@@ -26,7 +26,7 @@ const AuthForm = ({ type }) => {
       const endpoint = isSignup ? "/api/auth/signup" : "/api/auth/login";
 
       const res = await axios.post(
-        `http://localhost:3000${endpoint}`,
+        `${import.meta.env.VITE_SERVER_URL}${endpoint}`,
         formData,
         { withCredentials: true }
       );

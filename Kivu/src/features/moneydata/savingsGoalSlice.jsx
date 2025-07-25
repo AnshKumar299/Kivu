@@ -3,7 +3,7 @@ import axios from "axios";
 
 // Fetch the user's savings goal (returns the latest or empty)
 export const fetchSavingsGoal = createAsyncThunk("goal/fetch", async () => {
-  const { data } = await axios.get("http://localhost:3000/api/goals", {
+  const { data } = await axios.get(`${import.meta.env.VITE_SERVER_URL}/api/goals`, {
     withCredentials: true,
   }); // Returns an array
   return data.length > 0
@@ -19,7 +19,7 @@ export const saveSavingsGoal = createAsyncThunk(
     if (goalId) {
       // Update existing goal
       const res = await axios.put(
-        `http://localhost:3000/api/goals/${goalId}`,
+        `${import.meta.env.VITE_SERVER_URL}/api/goals/${goalId}`,
         { targetAmount },
         { withCredentials: true }
       );
@@ -27,7 +27,7 @@ export const saveSavingsGoal = createAsyncThunk(
     } else {
       // Create new goal
       const res = await axios.post(
-        `http://localhost:3000/api/goals`,
+        `${import.meta.env.VITE_SERVER_URL}/api/goals`,
         { targetAmount },
         { withCredentials: true }
       );
