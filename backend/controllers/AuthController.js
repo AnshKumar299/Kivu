@@ -21,7 +21,7 @@ module.exports.Signup = async (req, res, next) => {
       secure: true,
       sameSite: "None", // must be None for cross-site
       path: "/",
-      domain: ".vercel.app",  // <-- allows sharing across both subdomains
+      //domain: ".vercel.app",  // <-- allows sharing across both subdomains
     });
 
 
@@ -63,7 +63,7 @@ module.exports.Login = async (req, res, next) => {
        secure: true,
        sameSite: "None", // must be None for cross-site
        path: "/",
-       domain: ".vercel.app",  // <-- allows sharing across both subdomains
+       //domain: ".vercel.app",  // <-- allows sharing across both subdomains
      });
 
 
