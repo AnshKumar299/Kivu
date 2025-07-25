@@ -33,7 +33,7 @@ app.use(cookieParser());
 
 app.use(express.json());
 
-app.('/',(req,res)=>{
+app.get('/',(req,res)=>{
     res.send("APP IS WORKING PROPERLY");
 });
 
