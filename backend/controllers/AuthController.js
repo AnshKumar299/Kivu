@@ -18,7 +18,7 @@ module.exports.Signup = async (req, res, next) => {
 
     res.cookie("token", token, {
       httpOnly:true,
-      secure:false,
+      secure:true,
       sameSite:"lax",
       path:"/",
      });
@@ -58,7 +58,7 @@ module.exports.Login = async (req, res, next) => {
      const token = createSecretToken(user._id);
      res.cookie("token", token, {
       httpOnly:true,
-      secure:false,
+      secure:true,
       sameSite:"lax",
       path:"/",
      });
