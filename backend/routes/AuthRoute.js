@@ -1,6 +1,6 @@
 // routes/authRoutes.js
 const { Signup, Login, Logout } = require("../controllers/AuthController");
-const { userVerification } = require("../middlewares/AuthMiddleware");
+const { userVerification } = require("../Middlewares/AuthMiddleware");
 const router = require("express").Router();
 
 // Auth routes
