@@ -9,35 +9,36 @@ require("dotenv").config();
 
 const app = express();
 
-// Connect MongoDB
-const connectDB = async () => {
+// --- Connect to MongoDB ---
+(async () => {
   try {
     await mongoose.connect(process.env.MONGO_URI);
-    console.log("Mongo DB connected successfully");
+    console.log("MongoDB connected successfully");
   } catch (err) {
-    console.error(err.message);
+    console.error("MongoDB connection failed:", err.message);
     process.exit(1);
   }
-};
-connectDB();
+})();
 
-// --- CORS Middleware ---
+// --- CORS Configuration ---
+const allowedOrigin = process.env.FRONTEND_URL || "https://kivu.vercel.app";
+
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL, // e.g. "https://kivu.vercel.app"
+    origin: allowedOrigin,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    credentials: true,
+    credentials: true, // Allow cookies/sessions
   })
 );
 
-// Handle preflight OPTIONS requests for all routes
-app.options("*", cors());
+// Handle preflight OPTIONS requests
+app.options("*", cors({ origin: allowedOrigin, credentials: true }));
 
-// Other middleware
+// --- Middleware ---
 app.use(cookieParser());
 app.use(express.json());
 
-// Routes
+// --- Routes ---
 app.get("/", (req, res) => {
   res.send("APP IS WORKING PROPERLY");
 });
@@ -46,5 +47,5 @@ app.use("/api/auth", authRoute);
 app.use("/api/transaction", transactionRoutes);
 app.use("/api/goals", savingsGoalRoutes);
 
-// --- Export app for Vercel ---
+// --- Export app for Vercel (no app.listen) ---
 module.exports = app;
