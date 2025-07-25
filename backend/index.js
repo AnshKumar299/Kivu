@@ -4,6 +4,7 @@ const cors=require('cors')
 const cookieParser = require("cookie-parser");
 const authRoute = require("./routes/AuthRoute");
 const transactionRoutes = require('./routes/transactionRoutes');
+const savingsGoalRoutes = require("./routes/savingsGoalRoute");
 
 const app=express();
 require('dotenv').config();
@@ -39,3 +40,4 @@ app.listen(PORT,()=>{
 
 app.use('/api/auth',authRoute);
 app.use('/api/transaction',transactionRoutes)
+app.use('/api/goals',savingsGoalRoutes);

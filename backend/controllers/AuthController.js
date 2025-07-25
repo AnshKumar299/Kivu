@@ -17,9 +17,11 @@ module.exports.Signup = async (req, res, next) => {
     const token = createSecretToken(user._id);
 
     res.cookie("token", token, {
-      withCredentials: true,
-      httpOnly: true,
-    });
+      httpOnly:true,
+      secure:false,
+      sameSite:"lax",
+      path:"/",
+     });
 
     res
       .status(201)
@@ -55,12 +57,13 @@ module.exports.Login = async (req, res, next) => {
 
      const token = createSecretToken(user._id);
      res.cookie("token", token, {
-       withCredentials: true,
-       httpOnly: true,
+      httpOnly:true,
+      secure:false,
+      sameSite:"lax",
+      path:"/",
      });
 
      res.status(201).json({ message: "User logged in successfully", success: true });
-     next()
 
   } catch (error) {
     console.error(error);
