@@ -37,10 +37,10 @@ console.log("cors done");
 app.options("*", cors({ origin: allowedOrigin, credentials: true }));
 
 // --- Middleware ---
-app.use(cookieParser());
-app.use(express.json());
+//app.use(cookieParser());
+//app.use(express.json());
 
-console.log("Middlewares done");
+//console.log("Middlewares done");
 
 // --- Routes ---
 app.get("/", (req, res) => {
@@ -48,11 +48,11 @@ app.get("/", (req, res) => {
 });
 
 //app.use("/api/auth", authRoute);
-console.log("authRoute done");
+//console.log("authRoute done");
 //app.use("/api/transaction", transactionRoutes);
-console.log("transactionRoute done");
+//console.log("transactionRoute done");
 //app.use("/api/goals", savingsGoalRoute);
-console.log("savingsGoalRoute done");
+//console.log("savingsGoalRoute done");
 
 // --- Export app for Vercel (no app.listen) ---
 module.exports = app;
