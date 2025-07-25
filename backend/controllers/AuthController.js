@@ -17,11 +17,13 @@ module.exports.Signup = async (req, res, next) => {
     const token = createSecretToken(user._id);
 
     res.cookie("token", token, {
-      httpOnly:true,
-      secure:true,
-      sameSite:"None",
-      path:"/",
-     });
+      httpOnly: true,
+      secure: true,
+      sameSite: "None", // must be None for cross-site
+      path: "/",
+      domain: ".vercel.app",  // <-- allows sharing across both subdomains
+    });
+
 
     res
       .status(201)
@@ -57,11 +59,13 @@ module.exports.Login = async (req, res, next) => {
 
      const token = createSecretToken(user._id);
      res.cookie("token", token, {
-      httpOnly:true,
-      secure:true,
-      sameSite:"None",
-      path:"/",
+       httpOnly: true,
+       secure: true,
+       sameSite: "None", // must be None for cross-site
+       path: "/",
+       domain: ".vercel.app",  // <-- allows sharing across both subdomains
      });
+
 
      res.status(201).json({ message: "User logged in successfully", success: true });
 
