@@ -1,4 +1,6 @@
+
 import './App.css'
+import AuthForm from './components/AuthForm'
 import Home from './components/Home'
 import ReportsTab from './components/ReportsTab'
 import TransactionTab from './components/TransactionsTab'
@@ -16,6 +18,12 @@ function App() {
       },{
         path:'/Reports',
         element:<ReportsTab/>
+      },{
+        path:'/login',
+        element:<AuthForm type="login"/>
+      },{
+        path:'/signup',
+        element:<AuthForm type="signup"/>
       }
     ]
   )

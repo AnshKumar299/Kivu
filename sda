@@ -1,0 +1,65 @@
+[33mcommit d7cf3c2319c119875683e2c32b09beb36f164641[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Ansh Kumar Singh <singhanshkumar299@gmail.com>
+Date:   Wed Jul 23 20:12:53 2025 +0530
+
+    created backend
+
+[33mcommit 48c6b8a0549dfab3cf5182fc2708022df27e8315[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Ansh Kumar Singh <singhanshkumar299@gmail.com>
+Date:   Wed Jun 25 23:54:15 2025 +0530
+
+    made readme
+
+[33mcommit 7a5041cdde3806c1e597a1d30a481c03cb751eba[m
+Author: Ansh Kumar Singh <singhanshkumar299@gmail.com>
+Date:   Wed Jun 25 23:40:44 2025 +0530
+
+    fixed error
+
+[33mcommit 178b3f641b7a0e2e19850add580afebdd7941262[m
+Author: Ansh Kumar Singh <singhanshkumar299@gmail.com>
+Date:   Wed Jun 25 23:31:40 2025 +0530
+
+    Force add dist folder
+
+[33mcommit 0fa8547f666e05438aaca324a3d9e19297281675[m
+Author: Ansh Kumar Singh <singhanshkumar299@gmail.com>
+Date:   Wed Jun 25 23:21:38 2025 +0530
+
+    Created Transaction Tab
+
+[33mcommit 004190af5b255430c72297985ffdd714f09fe489[m
+Author: Ansh Kumar Singh <singhanshkumar299@gmail.com>
+Date:   Wed Jun 25 02:49:53 2025 +0530
+
+    added transaction list to transaction tab
+
+[33mcommit 188ea464ad12db2f20931f46f819f472ee19d804[m
+Author: Ansh Kumar Singh <singhanshkumar299@gmail.com>
+Date:   Tue Jun 24 23:09:12 2025 +0530
+
+    Made UI Changes
+
+[33mcommit 7bbab575bdc6c65943578abebd10018672f34466[m
+Author: Ansh Kumar Singh <singhanshkumar299@gmail.com>
+Date:   Mon Jun 23 04:02:57 2025 +0530
+
+    made balance component.Remaining: quick add transac
+
+[33mcommit 23444f0c69a323495d9ddf6831b726a89906bf63[m
+Author: Ansh Kumar Singh <singhanshkumar299@gmail.com>
+Date:   Mon Jun 23 02:44:26 2025 +0530
+
+    made the savingsBar
+
+[33mcommit 22839e0972b58362d1610df7c5781e0d350fa21f[m
+Author: Ansh Kumar Singh <singhanshkumar299@gmail.com>
+Date:   Sun Jun 22 22:04:41 2025 +0530
+
+    added welcome message
+
+[33mcommit 533764338e69a5ec7bad771b0c1e39f7e694b07f[m
+Author: Ansh Kumar Singh <singhanshkumar299@gmail.com>
+Date:   Sun Jun 22 20:29:44 2025 +0530
+
+    Navbar made

@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice,createAsyncThunk } from "@reduxjs/toolkit";
 import txnlist from '../../dB/Transactions.json';
 
 export const transactionSlice = createSlice({

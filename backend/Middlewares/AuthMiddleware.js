@@ -14,7 +14,7 @@ module.exports.userVerification = async (req, res, next) => {
       if (err) {
         return res.status(403).json({ status: false, message: "Invalid token" });
       }
-
+      console.log("Decoded token: ",data);
       const user = await User.findById(data.id);
       if (!user) {
         return res.status(404).json({ status: false, message: "User not found" });
