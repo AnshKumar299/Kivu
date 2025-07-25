@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const fetchTransacs = createAsyncThunk("fetchTransacs", async (_, { rejectWithValue }) => {
   try {
-    const response = await axios.get("http://localhost:3000/api/transaction/", {
+    const response = await axios.get(`${import.meta.env.VITE_SERVER_URL}/api/transaction/`, {
       withCredentials: true,
     });
     return response.data; // returns transaction list (array)
@@ -22,7 +22,7 @@ export const addTransaction = createAsyncThunk(
   async (transactionData, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/transaction/",
+        `${import.meta.env.VITE_SERVER_URL}/api/transaction/`,
         transactionData,
         { withCredentials: true }
       );
@@ -37,7 +37,7 @@ export const deleteTransaction = createAsyncThunk(
   "deleteTransac",
   async (transactionId, { rejectWithValue }) => {
     try {
-      await axios.delete(`http://localhost:3000/api/transaction/${transactionId}`, {
+      await axios.delete(`${import.meta.env.VITE_SERVER_URL}/api/transaction/${transactionId}`, {
         withCredentials: true,
       });
       return transactionId; // we only need the id to remove locally
@@ -52,7 +52,7 @@ export const updateTransaction = createAsyncThunk(
   async ({ transactionId, updatedData }, { rejectWithValue }) => {
     try {
       const response = await axios.put(
-        `http://localhost:3000/api/transaction/${transactionId}`,
+        `${import.meta.env.VITE_SERVER_URL}/api/transaction/${transactionId}`,
         updatedData,
         { withCredentials: true }
       );
