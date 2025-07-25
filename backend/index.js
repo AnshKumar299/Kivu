@@ -31,6 +31,8 @@ app.use(
   })
 );
 
+console.log("cors done");
+
 // Handle preflight OPTIONS requests
 app.options("*", cors({ origin: allowedOrigin, credentials: true }));
 
@@ -38,14 +40,19 @@ app.options("*", cors({ origin: allowedOrigin, credentials: true }));
 app.use(cookieParser());
 app.use(express.json());
 
+console.log("Middlewares done");
+
 // --- Routes ---
 app.get("/", (req, res) => {
   res.send("APP IS WORKING PROPERLY");
 });
 
 app.use("/api/auth", authRoute);
+console.log("authRoute done");
 app.use("/api/transaction", transactionRoutes);
+console.log("transactionRoute done");
 app.use("/api/goals", savingsGoalRoute);
+console.log("savingsGoalRoute done");
 
 // --- Export app for Vercel (no app.listen) ---
 module.exports = app;
