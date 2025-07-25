@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { userVerification } = require("../middlewares/AuthMiddleware");
+const { userVerification } = require("../Middlewares/AuthMiddleware");
 const {
   addGoal,
   getGoals,
