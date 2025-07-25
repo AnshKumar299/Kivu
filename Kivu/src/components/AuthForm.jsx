@@ -26,7 +26,7 @@ const AuthForm = ({ type }) => {
       const endpoint = isSignup ? "/api/auth/signup" : "/api/auth/login";
 
       const res = await axios.post(
-        `http://localhost:4000${endpoint}`,
+        `http://localhost:3000${endpoint}`,
         formData,
         { withCredentials: true }
       );
