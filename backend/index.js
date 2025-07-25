@@ -47,11 +47,11 @@ app.get("/", (req, res) => {
   res.send("APP IS WORKING PROPERLY");
 });
 
-app.use("/api/auth", authRoute);
+//app.use("/api/auth", authRoute);
 console.log("authRoute done");
-app.use("/api/transaction", transactionRoutes);
+//app.use("/api/transaction", transactionRoutes);
 console.log("transactionRoute done");
-app.use("/api/goals", savingsGoalRoute);
+//app.use("/api/goals", savingsGoalRoute);
 console.log("savingsGoalRoute done");
 
 // --- Export app for Vercel (no app.listen) ---
