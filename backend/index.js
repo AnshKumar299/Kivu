@@ -34,7 +34,8 @@ app.use(
 console.log("cors done");
 
 // Handle preflight OPTIONS requests
-//app.options("*", cors({ origin: allowedOrigin, credentials: true }));
+app.options('/*', cors({ origin: allowedOrigin, credentials: true }));
+
 
 // --- Middleware ---
 //app.use(cookieParser());
