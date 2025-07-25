@@ -34,14 +34,14 @@ app.use(
 console.log("cors done");
 
 // Handle preflight OPTIONS requests
-app.options('/*', cors({ origin: allowedOrigin, credentials: true }));
+//app.options('/*', cors({ origin: allowedOrigin, credentials: true }));
 
 
 // --- Middleware ---
-//app.use(cookieParser());
-//app.use(express.json());
+app.use(cookieParser());
+app.use(express.json());
 
-//console.log("Middlewares done");
+console.log("Middlewares done");
 
 // --- Routes ---
 app.get("/", (req, res) => {
