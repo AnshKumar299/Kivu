@@ -3,41 +3,42 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   rent: {
-    bg: 'bg-blue-200',
-    text: 'text-blue-700',
-    icon:'🏡'
+    bg: 'bg-blue-300',
+    text: 'text-blue-900',
+    icon: '🏡'
   },
   food: {
-    bg: 'bg-yellow-200',
-    text: 'text-yellow-700',
-    icon:'🥗'
+    bg: 'bg-yellow-300',
+    text: 'text-yellow-900',
+    icon: '🥗'
   },
   clothing: {
-    bg: 'bg-red-200', // crimson-like
-    text: 'text-red-800',
-    icon:'👕'
+    bg: 'bg-red-300', // richer crimson-like
+    text: 'text-red-900',
+    icon: '👕'
   },
   taxes: {
-    bg: 'bg-sky-200',
-    text: 'text-sky-700',
-    icon:'💰'
+    bg: 'bg-sky-300',
+    text: 'text-sky-900',
+    icon: '💰'
   },
   bills: {
-    bg: 'bg-emerald-200',
-    text: 'text-emerald-700',
-    icon:'💵'
+    bg: 'bg-emerald-300',
+    text: 'text-emerald-900',
+    icon: '💵'
   },
   miscellaneous: {
-    bg: 'bg-pink-200',
-    text: 'text-pink-700',
-    icon:'💼'
+    bg: 'bg-pink-300',
+    text: 'text-pink-900',
+    icon: '💼'
   },
   savings: {
-    bg: 'bg-orange-200',
-    text: 'text-orange-700',
-    icon:'💳'
+    bg: 'bg-orange-300',
+    text: 'text-orange-900',
+    icon: '💳'
   },
 };
+
 
 const colorSlice = createSlice({
   name: 'categoryColors',

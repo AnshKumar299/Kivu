@@ -2,7 +2,7 @@ import { createSlice,createAsyncThunk } from "@reduxjs/toolkit";
 import axios from 'axios'
 
 export const fetchUsername = createAsyncThunk('fetchUsername', async()=>{
-	const response = await axios.get('http://localhost:4000/api/auth/verify',{
+	const response = await axios.get('http://localhost:3000/api/auth/verify',{
     withCredentials:true, // send Cookies
   });
 	return response.data;
