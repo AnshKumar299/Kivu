@@ -18,7 +18,7 @@ module.exports.Signup = async (req, res, next) => {
 
     res.cookie("token", token, {
       httpOnly: true,
-      secure: true,
+      secure: process.env.NODE_ENV === "production",
       sameSite: "None", // must be None for cross-site
       path: "/",
       //domain: ".vercel.app",  // <-- allows sharing across both subdomains
@@ -60,7 +60,7 @@ module.exports.Login = async (req, res, next) => {
      const token = createSecretToken(user._id);
      res.cookie("token", token, {
        httpOnly: true,
-       secure: true,
+       secure: process.env.NODE_ENV === "production",
        sameSite: "None", // must be None for cross-site
        path: "/",
        //domain: ".vercel.app",  // <-- allows sharing across both subdomains
