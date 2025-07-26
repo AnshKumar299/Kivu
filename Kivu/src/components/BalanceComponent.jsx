@@ -146,7 +146,7 @@ export default function BalanceComponent() {
           
           <div className="flex items-baseline gap-2">
             <h1 className="font-robotoserif font-extrabold text-2xl">₹</h1>
-            <span className="font-robotoserif font-extrabold text-5xl md:text-6xl tracking-tight">
+            <span className="font-robotoserif font-extrabold text-4xl md:text-6xl sm:text-2xl tracking-tight">
               {countUp.toLocaleString()}
             </span>
             <span className="font-robotoserif font-bold text-2xl">.00</span>
