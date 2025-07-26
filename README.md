@@ -1,5 +1,3 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
-
 # 🪙 Kivu – Personal Finance Tracker
 
 > **A comprehensive fullstack web application that helps you take control of your personal finances with elegant simplicity.**
@@ -32,14 +30,52 @@
 - 🚀 **Optimized Performance** – Efficient database queries and caching
 
 
+# ![React]([https://img.shields.io/badge/React-20232A?style=for-the-badge\&logo](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo)]([https://img.shields.io/badge/Redux-593D88?style=for-the-badge\&logo=redux\&logoCSS](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoCSS)]([https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge\&logo=tailwind-css\&logoColor=whiteields.io/badge/Vite-B73BFE?style=for-the-badge\&logo](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=whiteields.io/badge/Vite-B73BFE?style=for-the-badge&logo) Backend
+
+![Node.js]([https://img.shields.io/badge/Node.js-43853D?style=for-the-badge\&logo=node.js\&logoColor=whiteimg.shields.io/badge/Express.js-404D59?style=for-the-badge.shields.io/badge/MongoDB-4EA94B?style=for-the-badge\&logo=mongodb\&logoColor=whiteields.io/badge/JWT-black?style=for-the-badge\&logo=](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=whiteimg.shields.io/badge/Express.js-404D59?style=for-the-badge.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=whiteields.io/badge/JWT-black?style=for-the-badge&logo=) Deployment \& Tools
+![Vercel]([https://img.shields.io/badge/Vercel-000000?style=for-the-badge\&logo=vercel\&logoColor=whiteields.io/badge/GIT-E44C30?style=for-the-badge\&logo=Code](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=whiteields.io/badge/GIT-E44C30?style=for-the-badge&logo=Code)]([https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge\&logo=visual%20studio%20code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code) 🚀 Quick Start
+
+make it words inseatd of links
+
+I see the issue - the badge links got malformed in the markdown. Here's the tech stack section with proper word formatting instead of broken badge links:
+
 ## 🛠️ Tech Stack
 
 ### Frontend
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=whiteields.io/badge/Vite-B73BFE?style=for-the-badge&logo 
+
+- **React** - Component-based UI library
+- **Redux Toolkit** - State management
+- **Tailwind CSS** - Utility-first CSS framework
+- **Vite** - Fast build tool and development server
+
+
 ### Backend
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=whiteimg.shields.io/badge/Express.js-404D59?style=for-the-badge.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=whiteields.io/badge/JWT-black?style=for-the-badge&logo= 
-### Deployment & Tools
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=whiteields.io/badge/GIT-E44C30?style=for-the-badge&logo=Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code 🚀 Quick Start
+
+- **Node.js** - JavaScript runtime environment
+- **Express.js** - Web application framework
+- **MongoDB** - NoSQL database
+- **Mongoose** - MongoDB object modeling
+- **JWT** - JSON Web Tokens for authentication
+
+
+### Deployment \& Tools
+
+- **Vercel** - Frontend deployment platform
+- **Git** - Version control system
+- **VS Code** - Code editor
+- **npm** - Package manager
+
+This format is cleaner and more readable than the broken badge links. It clearly shows all the technologies used in your MERN stack application without the visual clutter of malformed URLs.
+
+<div style="text-align: center">⁂</div>
+
+[^1]: https://img.shields.io/badge/React-20232A?style=for-the-badge\&logo
+
+[^2]: https://img.shields.io/badge/Redux-593D88?style=for-the-badge\&logo=redux\&logoCSS
+
+[^3]: https://img.shields.io/bad
+
+
 
 ## 🚀 Quick Start
 
