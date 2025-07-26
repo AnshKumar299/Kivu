@@ -159,12 +159,6 @@ Kivu/
 - 🚀 Automated deployment with Vercel
 
 
-## 🎨 UI Screenshots
-
-| Desktop Dashboard | Mobile View | Transaction Management |
-| :-- | :-- | :-- |
-| *add screenshot* | *add screenshot* | *add screenshot* |
-
 ## 🔮 Future Enhancements
 
 - [ ] 📈 Advanced analytics \& charts
@@ -190,9 +184,8 @@ Feel free to submit issues or PRs!
 
 **Ansh Kumar**
 
-- Portfolio: https://your-portfolio.com
-- LinkedIn: https://linkedin.com/in/your-profile
-- Email: anshkumar299@example.com
+- LinkedIn: [Ansh Kumar Singh](https://www.linkedin.com/in/ansh-kumar-singh-342780290/)
+- Email: singhanshkumar299@gmail.com
 
 
 ## 📄 License
