@@ -35,10 +35,11 @@
 ## 🛠️ Tech Stack
 
 ### Frontend
-
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=whiteields.io/badge/Vite-B73BFE?style=for-the-badge&logo 
 ### Backend
-
-### Deployment \& Tools
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=whiteimg.shields.io/badge/Express.js-404D59?style=for-the-badge.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=whiteields.io/badge/JWT-black?style=for-the-badge&logo= 
+### Deployment & Tools
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=whiteields.io/badge/GIT-E44C30?style=for-the-badge&logo=Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code 🚀 Quick Start
 
 ## 🚀 Quick Start
 
